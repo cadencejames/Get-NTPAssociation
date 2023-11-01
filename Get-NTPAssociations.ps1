@@ -36,4 +36,11 @@ foreach ($site in $sites) {
 		}
 		Add-Content $outfile "=============================================================="
 	}
+ 	else {
+  		Add-Content $outfile ""
+		Add-Content $outfile "$($site.IP) - $($site.sitename)"
+		Add-Content $outfile "--------------------------"
+  		Add-Content $outfile "Unable to reach"
+    		Add-Content $outfile "=============================================================="
+  	}
 }
