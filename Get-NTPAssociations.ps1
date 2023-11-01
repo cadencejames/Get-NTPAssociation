@@ -9,10 +9,9 @@ Prerequisite	: Powershell Version 2.0 or newer
 				: PuTTY Release 0.72 or newer
 				: 'sites.csv' file
 				: Network Device Credentials
-				
-.HISTORY
-	1.0 - 10/05/2023 - Initial Script
 #>
+
+
 $username = Read-Host -Prompt " Username"
 $password = Read-Host -Prompt " Password" -AsSecureString
 $temppass = [System.Runtime.InteropServices.Marshal]::SecureStringToCoTaskMemUnicode($password)
