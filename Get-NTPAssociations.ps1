@@ -28,7 +28,7 @@ foreach ($site in $sites) {
 		echo y | plink $( $site.IP ) -ssh
 		$ntp = $( plink $( $site.IP ) -l $username -pw $password -batch "show ntp associations" )
 		Add-Content $outfile ""
-		Add-Content $outfile "$($site.IP) - $($site.hostname)"
+		Add-Content $outfile "$($site.IP) - $($site.sitename)"
 		Add-Content $outfile "--------------------------"
 		foreach ($line in $ntp) {
 			if ($counter -lt 4) { $counter++; continue }
