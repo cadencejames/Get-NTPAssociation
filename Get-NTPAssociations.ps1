@@ -5,10 +5,10 @@ Retrieves NTP associations from networking devices
 .NOTES
 File Name		: Get-NTPAssociations.ps1
 Author			: Cadence James
-Prerequisite	: Powershell Version 2.0 or newer
-				: PuTTY Release 0.72 or newer
-				: 'sites.csv' file
-				: Network Device Credentials
+Prerequisite	        : Powershell Version 2.0 or newer
+			: PuTTY Release 0.72 or newer
+			: 'sites.csv' file
+			: Network Device Credentials
 #>
 
 
