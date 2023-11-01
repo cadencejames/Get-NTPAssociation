@@ -11,9 +11,8 @@ This script requires a machine with PowerShell 2.0 or newer, PuTTY Release Versi
 
 ## Running
 
-### To run the script:
-
+In the base directory with the accompanying `sites.csv` file run:
 ```
-./Get-NTPAssociations.ps1
+.\Get-NTPAssociations.ps1
 ```
 Enter your credentials and the output will be saved in `NTPAssociations.txt` located in the base file directory.
