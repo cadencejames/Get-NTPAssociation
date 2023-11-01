@@ -30,10 +30,7 @@ foreach ($site in $sites) {
 		Add-Content $outfile ""
 		Add-Content $outfile "$($site.IP) - $($site.sitename)"
 		Add-Content $outfile "--------------------------"
-		foreach ($line in $ntp) {
-			if ($counter -lt 4) { $counter++; continue }
-			Add-Content $outfile $line
-		}
+		Add-Content $outfile $ntp
 		Add-Content $outfile "=============================================================="
 	}
  	else {
