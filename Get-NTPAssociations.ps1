@@ -16,7 +16,7 @@ $username = Read-Host -Prompt " Username"
 $password = Read-Host -Prompt " Password" -AsSecureString
 $temppass = [System.Runtime.InteropServices.Marshal]::SecureStringToCoTaskMemUnicode($password)
 $password = [System.Runtime.InteropServices.Marshal]::PtrToStringUni($temppass)
-if (! (Test-Path ".\sites.csv") ) { Write-Host " No 'sites.csv' file found. Please verify" -foreground red; quit }
+if (! (Test-Path ".\sites.csv") ) { Write-Host " No 'sites.csv' file found. Please verify" -ForegroundColor red; quit }
 else { $sites = Import-Csv ".\sites.csv" }
 $outfile = ".\NTPAssociations.txt"
 New-Item -Path $outfile -Type file -Force | Out-Null
